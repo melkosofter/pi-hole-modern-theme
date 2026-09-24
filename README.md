@@ -1,6 +1,3 @@
-![Image alt](https://github.com/melkosofter/pi-hole-modern-theme/raw/main/previews/light-style.jpg)
-![Image alt](https://github.com/melkosofter/pi-hole-modern-theme/raw/main/previews/dark-style.jpg)
-
 # Pi-hole Modern
 
 A modern light/dark theme for the **Pi-hole v6** web interface. Pure CSS — it touches neither Pi-hole's markup nor its JavaScript.
@@ -12,6 +9,10 @@ A modern light/dark theme for the **Pi-hole v6** web interface. Pure CSS — it 
 pihole-modern.css     ← the theme itself (the only file needed on the server)
 install.sh            ← install / roll back on the server
 ```
+
+![Image alt](https://github.com/melkosofter/pi-hole-modern-theme/raw/main/previews/light-style.jpg)
+![Image alt](https://github.com/melkosofter/pi-hole-modern-theme/raw/main/previews/dark-style.jpg)
+
 
 ## Installing
 
@@ -54,6 +55,7 @@ cd /var/www/html/admin && sudo git checkout -- style/themes
 ```
 
 `pihole -up` restores the stock files. Run `install.sh` again after an update (or use the Docker volumes, which survive updates).
+
 
 ## Customizing
 
