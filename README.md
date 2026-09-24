@@ -1,3 +1,6 @@
+![Image alt](https://github.com/melkosofter/pi-hole-modern-theme/raw/main/previews/light-style.jpg)
+![Image alt](https://github.com/melkosofter/pi-hole-modern-theme/raw/main/previews/dark-style.jpg)
+
 # Pi-hole Modern
 
 A modern light/dark theme for the **Pi-hole v6** web interface. Pure CSS — it touches neither Pi-hole's markup nor its JavaScript.
