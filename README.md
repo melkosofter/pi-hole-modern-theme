@@ -20,30 +20,14 @@ The script copies `pihole-modern.css` over `default-light.css` and `default-dark
 
 ```bash
 # copy the folder to the Pi-hole host (pihole-modern.css and install.sh are enough)
-scp pihole-modern.css install.sh pi@pi.hole:~
-ssh pi@pi.hole
+cd /var/www/html/admin/style/themes/
+sudo git clone https://github.com/melkosofter/pi-hole-modern-theme.git
 chmod +x install.sh
 sudo ./install.sh
 ```
 
 Then pick *Pi-hole default theme (auto / light / dark)* in **Settings → Web interface / API** and reload with `Ctrl+F5`.
 
-The same by hand:
-
-```bash
-cd /var/www/html/admin/style/themes/
-sudo cp default-light.css default-light.css.orig
-sudo cp default-dark.css  default-dark.css.orig
-sudo cp ~/pihole-modern.css default-light.css
-sudo cp ~/pihole-modern.css default-dark.css
-```
-
-**Docker:** the path inside the container is the same. Copy the files with `docker cp`, or mount them as volumes:
-
-```yaml
-volumes:
-  - ./pihole-modern.css:/var/www/html/admin/style/themes/default-light.css:ro
-  - ./pihole-modern.css:/var/www/html/admin/style/themes/default-dark.css:ro
 ```
 
 ### Rolling back
